@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document 导航栏样式*/
+*{margin:0px;padding:0px;}
+li{list-style:none;}
+a{text-decoration:none;}
+em,i{font-style:normal;}
+.navbox:hover{color:#09F;}
+.navlist li:hover{background:#09F;}
+
+.wrap{width:240px;position:relative;margin:30px auto;}
+.navbox{height:50px;background:#333;-moz-box-shadow:#000 0px 2px 5px;-webkit-box-shadow:#000 0px 2px 5px;box-shadow:#000 0px 2px 5px;cursor:pointer;font:20px/60px "Microsoft YaHei";}
+.navbox span{display:inline-block;height:50px;padding-left:30px;}
+.triangle{height:40px;width:40px;border-left:#666 solid 2px;position:absolute;right:10px;top:5px;}
+.triangle i{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border-style: dashed dashed solid dashed;
+	border-color: #000 #333 #333 #333;
+	border-width: 6px;
+	margin: -4px 0 0 -1px;
+    *height:6px;*overflow:hidden;
+}
+	
+/*list*/
+.navlist{position:absolute;left:0;top:60px;width:100%;}
+.navlist li{background:#CCC;height:50px;margin-bottom:5px;position:relative;filter:alpha(opacity:0);opacity:0;-moz-box-shadow:#000 0px 1px 5px;-webkit-box-shadow:#000 0px 1px 5px;box-shadow:#000 0px 1px 5px;}
+.navlist li a{font:20px/60px "Microsoft YaHei";height:50px;padding-left:30px;color:#666;}
+
+#div2{width:100px;height:80px;
+     background:#099;position:absolute;
+	 left:30px;top:30px;font:24px "Microsoft YaHei";
+     animation:mymove 5s infinite;
+	 -webkit-animation:mymove 5s infinite;
+     transform:rotate(7deg);
+     -ms-transform:rotate(7deg); 	/* IE 9 */
+     -moz-transform:rotate(7deg); 	/* Firefox */
+     -webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+     -o-transform:rotate(7deg); 	/* Opera */}
+@keyframes mymove
+{
+	from{transform:rotate(7deg);background: yellow;}
+	to{transform:rotate(367deg);background: #09F;}
+}
+@-webkit-keyframes mymove
+{
+	from{-webkit-transform:rotate(7deg);background: yellow;}
+	to{-webkit-transform:rotate(367deg);background: #09F;}
+}
+
